@@ -9,7 +9,7 @@ A python script (`$python3 proj1.py`) which runs a planner as a blackbox to solv
 
 ## Installing Singularity  
 
-    ```$ sudo apt-get update && sudo apt-get install -y build-essential \
+    $ sudo apt-get update && sudo apt-get install -y build-essential \
         uuid-dev \
         libgpgme-dev \
         squashfs-tools \
@@ -17,24 +17,24 @@ A python script (`$python3 proj1.py`) which runs a planner as a blackbox to solv
         wget \
         pkg-config \
         git \
-        cryptsetup-bin ```
+        cryptsetup-bin 
 
 
-    ``` $ sudo apt install golang  ```
+     $ sudo apt install golang  
     
-    ``` $ git clone https://github.com/sylabs/singularity.git && \
+     $ git clone https://github.com/sylabs/singularity.git && \
         cd singularity && \
-        git checkout v3.5.2 ```
+        git checkout v3.5.2 
     
-    ``` $ ./mconfig && \
+     $ ./mconfig && \
         make -C ./builddir && \
-        sudo make -C ./builddir install ```
+        sudo make -C ./builddir install 
 
 ## Building the planner image   
 team23 was the winning team, with their planner Delfi1.  
 
-    ``` $ wget https://bitbucket.org/ipc2018-classical/team23/raw/ipc-2018-seq-opt/Singularity
-    $ sudo singularity build planner.img Singularity  ```
+     $ wget https://bitbucket.org/ipc2018-classical/team23/raw/ipc-2018-seq-opt/Singularity
+    $ sudo singularity build planner.img Singularity  
 
 ## Run  
 In `proj.py` change the variable `PLANNER_IMG` so that it points to where your planner image is.  
